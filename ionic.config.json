@@ -1,0 +1,7 @@
+{
+  "name": "mhw-app-bd",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
