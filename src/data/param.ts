@@ -5,5 +5,6 @@ export const param = {
     getMonster : host+'monsters/{{id}}',
     getWeapons : host+'weapons',
     getWeapon : host+'weapons/{{id}}',
-    getArmors : host+'armor/sets'
+    getArmorsSets : host+'armor/sets',
+    getArmorSet : host+'armor/sets/{{id}}'
 }

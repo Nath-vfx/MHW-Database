@@ -17,11 +17,11 @@
         <ion-card-content>
           <ion-list>
             <ion-item v-for="weapon in liste" :key="weapon.id" :routerLink="'/weapon/' + weapon.id"
-                      :detail="false" >
+                      :detail="false" @click="fiche(weapon.id)">
               <ion-thumbnail>
 
               </ion-thumbnail>
-              <ion-buttons @click="fiche(weapon.id)">
+              <ion-buttons >
                 {{weapon.name}}
               </ion-buttons>
               &nbsp;

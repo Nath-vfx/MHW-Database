@@ -8,6 +8,7 @@ import ListeArmes from "@/views/ListeArmes.vue";
 import ListeArmures from "@/views/ListeArmures.vue";
 import LeMonstre from "@/views/VoirMonstre.vue";
 import LArme from "@/views/VoirArme.vue";
+import LArmure from "@/views/VoirArmure.vue";
 
 
 const routes: Array<RouteRecordRaw> = [
@@ -17,6 +18,7 @@ const routes: Array<RouteRecordRaw> = [
     {path: '/listeArmes', name: 'ListeArmes', component: ListeArmes},
     {path: '/weapon/:id', name: 'Arme', component: LArme},
     {path: '/listeArmures', name: 'ListeArmures', component: ListeArmures},
+    {path: '/armor/:id', name: 'Armure', component: LArmure},
     {path: '/rechercher', name: 'Rechercher', component: SearchPage}
 ]
 

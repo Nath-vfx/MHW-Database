@@ -16,11 +16,10 @@
         </ion-card-header>
         <ion-card-content>
           <ion-list>
-            <ion-item v-for="armor in liste" :key="armor.id">
-              <ion-img id="imgIcon"></ion-img>
-              &nbsp; {{armor.name}} <br>
-
-                <ion-card-subtitle>   Rank : {{armor.rank}}</ion-card-subtitle>
+            <ion-item v-for="armorSet in liste" :key="armorSet.id" @click="fiche(armorSet.id)">
+              &nbsp; {{armorSet.name}}
+              &nbsp;
+                <ion-card-subtitle>Rank : {{armorSet.rank}}</ion-card-subtitle>
 
             </ion-item>
           </ion-list>
@@ -59,17 +58,21 @@ export default defineComponent({
   },
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   mounted() {
-    console.log('mounted Weapons', param.getWeapons);
+    console.log('mounted Armor', param.getWeapons);
 
     axios
-    .get(param.getArmors)
+    .get(param.getArmorsSets)
     .then((response) => {
       console.log("Reponse : ", response.data);
       this.liste = response.data;
-      console.log("Liste des armes : ", this.liste)
+      console.log("Liste des armures : ", this.liste)
     })
   },
-  methods: {}
+  methods: {
+    fiche(id:number){
+      this.$router.push({name: 'Armure', params: {id} })
+    }
+  }
 
 });
 </script>
