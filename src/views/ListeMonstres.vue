@@ -17,7 +17,7 @@
         <ion-card-content>
           <ion-list>
             <ion-item v-for="monster in liste" :key="monster.id" :routerLink="'/monster/' + monster.id"
-                      :detail="false">
+                      :detail="false" @click="fiche(monster.id)">
               <ion-icon :icon="pawOutline"></ion-icon>
               &nbsp; {{monster.name}}
             </ion-item>
@@ -59,6 +59,7 @@ export default defineComponent({
   },
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   mounted() {
+
     console.log('mounted Monsters', param.getMonsters);
 
     axios
@@ -67,15 +68,13 @@ export default defineComponent({
       console.log("Reponse : ", response.data);
       this.liste = response.data;
       console.log("Liste des monstres : ", this.liste)
-    })
+    });
   },
   methods: {
-    refresh: (ev: CustomEvent) => {
-      setTimeout(() => {
-        ev.detail.complete();
-      }, 3000);
+    fiche(id:number){
+      this.$router.push({name: 'Monstre', params: {id} })
     }
-  },
+  }
 
 });
 </script>

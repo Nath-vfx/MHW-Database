@@ -5,21 +5,24 @@
         <ion-buttons slot="start">
           <ion-menu-button color="primary"></ion-menu-button>
         </ion-buttons>
-        <ion-title>Monstre</ion-title>
+        <ion-title>Arme</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>
       <ion-card>
         <ion-card-header>
+          <ion-item slot="start">
+            <img :src="weapon.assets.icon">
+          </ion-item>
           <ion-card-title>
-            {{monstre.name}}
+            {{weapon.name}}
           </ion-card-title>
           <ion-card-subtitle>
-            Type : {{monstre.type}} / Species : {{monstre.species}}
+            Type : {{weapon.type}} / Rarity : {{weapon.rarity}}
           </ion-card-subtitle>
         </ion-card-header>
         <ion-card-content>
-          {{monstre.description}}
+          <img :src="weapon.assets.image" :alt="weapon.name">
         </ion-card-content>
       </ion-card>
     </ion-content>
@@ -28,7 +31,7 @@
 
 <script lang="ts">
 
-import { IonPage, IonToolbar, IonButtons, IonTitle, IonHeader, IonMenuButton, IonBackButton, IonCardTitle, IonCardSubtitle, IonCardHeader, IonCardContent, IonCard, IonContent } from '@ionic/vue';
+import { IonPage, IonToolbar, IonButtons, IonTitle, IonHeader, IonMenuButton, IonBackButton, IonCardTitle, IonCardSubtitle, IonCardHeader, IonCardContent, IonCard, IonContent, IonImg, IonItem } from '@ionic/vue';
 
 import {} from 'ionicons/icons';
 
@@ -41,16 +44,19 @@ import {param} from "@/data/param";
 export default defineComponent({
   data() {
     return {
-      monstre:{
+      weapon:{
         name: null,
         type: null,
-        species: null,
-        description: null
+        rarity: null,
+        assets: {
+          image: null,
+          icon: null
+        }
       }
     }
   },
   components: {
-    IonPage, IonToolbar, IonButtons, IonTitle, IonHeader, IonMenuButton, IonBackButton, IonCardTitle, IonCardSubtitle, IonCardHeader, IonCardContent, IonCard, IonContent
+    IonPage, IonToolbar, IonButtons, IonTitle, IonHeader, IonMenuButton, IonBackButton, IonCardTitle, IonCardSubtitle, IonCardHeader, IonCardContent, IonCard, IonContent, IonImg, IonItem
   },
   setup(){
     return{}
@@ -58,15 +64,15 @@ export default defineComponent({
   mounted() {
     let id = ''+this.$route.params.id;
 
-    let request = param.getMonster.replace('{{id}}', id);
+    let request = param.getWeapon.replace('{{id}}', id);
     console.log("request", request);
 
     axios
     .get(request)
     .then((response)=> {
-      console.log("monstre", response.data);
-      this.monstre = response.data;
-      console.log("le monstre en question : ", this.monstre)
+      console.log("arme", response.data);
+      this.weapon = response.data;
+      console.log("l'arme en question : ", this.weapon)
     })
 
   }

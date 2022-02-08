@@ -16,9 +16,15 @@
         </ion-card-header>
         <ion-card-content>
           <ion-list>
-            <ion-item v-for="weapon in liste" :key="weapon.id">
-              <ion-img id="imgIcon" :src="weapon.assets.icon"></ion-img>
-              {{weapon.name}}
+            <ion-item v-for="weapon in liste" :key="weapon.id" :routerLink="'/weapon/' + weapon.id"
+                      :detail="false" >
+              <ion-thumbnail>
+
+              </ion-thumbnail>
+              <ion-buttons @click="fiche(weapon.id)">
+                {{weapon.name}}
+              </ion-buttons>
+              &nbsp;
             </ion-item>
           </ion-list>
         </ion-card-content>
@@ -30,9 +36,8 @@
 <script lang="ts">
 import {
   IonPage, IonToolbar, IonHeader, IonButtons, IonMenuButton, IonTitle, IonContent, IonCard, IonCardHeader,
-  IonCardTitle, IonCardSubtitle, IonCardContent, IonImg, IonItem, IonList
+  IonCardTitle, IonCardSubtitle, IonCardContent, IonIcon, IonItem, IonList, IonThumbnail, IonImg
 } from '@ionic/vue';
-
 
 import {defineComponent} from "vue";
 
@@ -43,40 +48,41 @@ import axios from "axios";
 export default defineComponent({
   data() {
     return {
-      liste:[]
+      liste:[],
+      icon: null
     }
   },
   components: {
     IonPage, IonToolbar, IonHeader, IonButtons, IonMenuButton, IonTitle, IonContent, IonCard, IonCardHeader,
-    IonCardTitle, IonCardSubtitle, IonCardContent, IonImg, IonItem, IonList
+    IonCardTitle, IonCardSubtitle, IonCardContent, IonIcon, IonItem, IonList, IonThumbnail, IonImg
   },
   setup() {
     return {
+
     }
   },
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   mounted() {
+
     console.log('mounted Weapons', param.getWeapons);
 
     axios
-    .get(param.getWeapons)
-    .then((response) => {
-      console.log("Reponse : ", response.data);
-      this.liste = response.data;
-      console.log("Liste des armes : ", this.liste)
-    })
+        .get(param.getWeapons)
+        .then((response) => {
+          console.log("Reponse : ", response.data);
+          this.liste = response.data;
+          console.log("Liste des armes : ", this.liste)
+        });
   },
-  methods: {}
+  methods: {
+    fiche(id:number){
+      this.$router.push({name: 'Arme', params: {id} })
+    }
+  }
 
 });
 </script>
 
 <style scoped>
-#imgIcon {
-  width: 40px;
-  height: auto;
-  object-fit: cover;
-}
-
 
 </style>
