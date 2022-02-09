@@ -3,7 +3,7 @@
     <ion-header translucent="true">
       <ion-toolbar>
         <ion-buttons slot="start">
-          <ion-menu-button color="primary"></ion-menu-button>
+          <ion-back-button color="primary"></ion-back-button>
         </ion-buttons>
         <ion-title>Arme</ion-title>
       </ion-toolbar>
@@ -41,7 +41,7 @@
               <ion-card-content>
                 <ion-col v-for="piece in armor.pieces" :key="piece.id">
                   <ion-row v-for="skill in piece.skills" :key="skill.id">
-                    <ion-card>
+                    <ion-card color="light">
                       <ion-card-header><ion-button color="success" size="small">{{ skill.skillName }}</ion-button>
                         <br> Lvl : {{ skill.level }}</ion-card-header>
                       <ion-card-content>{{ skill.description }}</ion-card-content>

@@ -14,20 +14,35 @@
           <ion-card-title>Liste des Armes</ion-card-title>
           <ion-card-subtitle>Les armes disponibles</ion-card-subtitle>
         </ion-card-header>
-        <ion-card-content>
-          <ion-list>
-            <ion-item v-for="weapon in liste" :key="weapon.id" :routerLink="'/weapon/' + weapon.id"
-                      :detail="false" @click="fiche(weapon.id)">
-              <ion-thumbnail>
+          <ion-card-content>
+            <ion-list>
+              <ion-item v-for="weapon in liste" :key="weapon.id" :routerLink="'/weapon/' + weapon.id"
+                        :detail="false" @click="fiche(weapon.id)">
+                <ion-thumbnail>
 
-              </ion-thumbnail>
-              <ion-buttons >
-                {{weapon.name}}
-              </ion-buttons>
-              &nbsp;
-            </ion-item>
-          </ion-list>
-        </ion-card-content>
+                </ion-thumbnail>
+                <ion-buttons >
+                  {{weapon.name}}
+                </ion-buttons>
+                &nbsp;
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        <div v-if="!liste.length > 0">
+          <ion-card-content>
+            <ion-list>
+              <ion-item v-for="item in 20">
+                <ion-thumbnail slot="start">
+                  <ion-skeleton-text animated style="width: 100%"></ion-skeleton-text>
+                </ion-thumbnail>
+                  <p>
+                    <ion-skeleton-text animated style="width: 30vw"></ion-skeleton-text>
+                  </p>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </div>
+
       </ion-card>
     </ion-content>
   </ion-page>
@@ -36,7 +51,7 @@
 <script lang="ts">
 import {
   IonPage, IonToolbar, IonHeader, IonButtons, IonMenuButton, IonTitle, IonContent, IonCard, IonCardHeader,
-  IonCardTitle, IonCardSubtitle, IonCardContent, IonIcon, IonItem, IonList, IonThumbnail, IonImg
+  IonCardTitle, IonCardSubtitle, IonCardContent, IonIcon, IonItem, IonList, IonThumbnail, IonImg, IonSkeletonText
 } from '@ionic/vue';
 
 import {defineComponent} from "vue";
@@ -54,7 +69,7 @@ export default defineComponent({
   },
   components: {
     IonPage, IonToolbar, IonHeader, IonButtons, IonMenuButton, IonTitle, IonContent, IonCard, IonCardHeader,
-    IonCardTitle, IonCardSubtitle, IonCardContent, IonIcon, IonItem, IonList, IonThumbnail, IonImg
+    IonCardTitle, IonCardSubtitle, IonCardContent, IonIcon, IonItem, IonList, IonThumbnail, IonImg, IonSkeletonText
   },
   setup() {
     return {

@@ -22,6 +22,14 @@
                 <ion-card-subtitle>Rank : {{armorSet.rank}}</ion-card-subtitle>
 
             </ion-item>
+            <div v-if="!liste.length > 0">
+              <ion-item v-for="item in 20">
+                &nbsp; <ion-skeleton-text animated style="width: 6vw"></ion-skeleton-text>
+                &nbsp;
+                <ion-card-subtitle><ion-skeleton-text animated style="width: 10vw"></ion-skeleton-text></ion-card-subtitle>
+
+              </ion-item>
+            </div>
           </ion-list>
         </ion-card-content>
       </ion-card>
@@ -32,7 +40,7 @@
 <script lang="ts">
 import {
   IonPage, IonToolbar, IonHeader, IonButtons, IonMenuButton, IonTitle, IonContent, IonCard, IonCardHeader,
-  IonCardTitle, IonCardSubtitle, IonCardContent, IonImg, IonItem, IonList
+  IonCardTitle, IonCardSubtitle, IonCardContent, IonImg, IonItem, IonList, IonSkeletonText
 } from '@ionic/vue';
 
 
@@ -50,7 +58,7 @@ export default defineComponent({
   },
   components: {
     IonPage, IonToolbar, IonHeader, IonButtons, IonMenuButton, IonTitle, IonContent, IonCard, IonCardHeader,
-    IonCardTitle, IonCardSubtitle, IonCardContent, IonImg, IonItem, IonList
+    IonCardTitle, IonCardSubtitle, IonCardContent, IonImg, IonItem, IonList, IonSkeletonText
   },
   setup() {
     return {

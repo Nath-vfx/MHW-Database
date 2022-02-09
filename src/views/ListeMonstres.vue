@@ -18,9 +18,15 @@
           <ion-list>
             <ion-item v-for="monster in liste" :key="monster.id" :routerLink="'/monster/' + monster.id"
                       :detail="false" @click="fiche(monster.id)">
-              <ion-icon :icon="pawOutline"></ion-icon>
+                <ion-icon :icon="pawOutline" size="large"></ion-icon>
               &nbsp; {{monster.name}}
             </ion-item>
+            <div v-if="!liste.length > 0">
+              <ion-item v-for="item in 20">
+                <ion-thumbnail><ion-skeleton-text animated></ion-skeleton-text></ion-thumbnail>
+                &nbsp; <ion-skeleton-text animated style="width: 30%"></ion-skeleton-text>
+              </ion-item>
+            </div>
           </ion-list>
         </ion-card-content>
       </ion-card>
@@ -31,7 +37,7 @@
 <script lang="ts">
 import {
   IonPage, IonToolbar, IonHeader, IonButtons, IonMenuButton, IonTitle, IonContent, IonCard, IonCardHeader,
-  IonCardTitle, IonCardSubtitle, IonCardContent, IonIcon, IonItem, IonList
+  IonCardTitle, IonCardSubtitle, IonCardContent, IonIcon, IonItem, IonList, IonThumbnail
 } from '@ionic/vue';
 
 import {pawOutline} from 'ionicons/icons'
@@ -50,7 +56,7 @@ export default defineComponent({
   },
   components: {
     IonPage, IonToolbar, IonHeader, IonButtons, IonMenuButton, IonTitle, IonContent, IonCard, IonCardHeader,
-    IonCardTitle, IonCardSubtitle, IonCardContent, IonIcon, IonItem, IonList
+    IonCardTitle, IonCardSubtitle, IonCardContent, IonIcon, IonItem, IonList, IonThumbnail
   },
   setup() {
     return {
