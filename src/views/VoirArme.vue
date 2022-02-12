@@ -9,20 +9,27 @@
       </ion-toolbar>
     </ion-header>
     <ion-content>
-      <ion-card>
+      <ion-card >
         <ion-card-header>
           <ion-item slot="start">
             <img :src="weapon.assets.icon">
           </ion-item>
           <ion-card-title>
-            {{weapon.name}}
+            {{ weapon.name }}
           </ion-card-title>
           <ion-card-subtitle>
-            Type : {{weapon.type}} / Rarity : {{weapon.rarity}}
+            Type : {{ weapon.type }} / Rarity : {{ weapon.rarity }}
           </ion-card-subtitle>
         </ion-card-header>
         <ion-card-content>
-          <img :src="weapon.assets.image" :alt="weapon.name">
+          <ion-item color="secondary">
+            <ion-fab horizontal="center">
+
+                <img :src="weapon.assets.image" :alt="weapon.name">
+            </ion-fab>
+          </ion-item>
+
+
         </ion-card-content>
       </ion-card>
     </ion-content>
@@ -31,7 +38,23 @@
 
 <script lang="ts">
 
-import { IonPage, IonToolbar, IonButtons, IonTitle, IonHeader, IonMenuButton, IonBackButton, IonCardTitle, IonCardSubtitle, IonCardHeader, IonCardContent, IonCard, IonContent, IonImg, IonItem } from '@ionic/vue';
+import {
+  IonPage,
+  IonToolbar,
+  IonButtons,
+  IonTitle,
+  IonHeader,
+  IonMenuButton,
+  IonBackButton,
+  IonCardTitle,
+  IonCardSubtitle,
+  IonCardHeader,
+  IonCardContent,
+  IonCard,
+  IonContent,
+  IonImg,
+  IonItem
+} from '@ionic/vue';
 
 import {} from 'ionicons/icons';
 
@@ -44,7 +67,7 @@ import {param} from "@/data/param";
 export default defineComponent({
   data() {
     return {
-      weapon:{
+      weapon: {
         name: null,
         type: null,
         rarity: null,
@@ -56,24 +79,38 @@ export default defineComponent({
     }
   },
   components: {
-    IonPage, IonToolbar, IonButtons, IonTitle, IonHeader, IonMenuButton, IonBackButton, IonCardTitle, IonCardSubtitle, IonCardHeader, IonCardContent, IonCard, IonContent, IonImg, IonItem
+    IonPage,
+    IonToolbar,
+    IonButtons,
+    IonTitle,
+    IonHeader,
+    IonMenuButton,
+    IonBackButton,
+    IonCardTitle,
+    IonCardSubtitle,
+    IonCardHeader,
+    IonCardContent,
+    IonCard,
+    IonContent,
+    IonImg,
+    IonItem
   },
-  setup(){
-    return{}
+  setup() {
+    return {}
   },
   mounted() {
-    let id = ''+this.$route.params.id;
+    let id = '' + this.$route.params.id;
 
     let request = param.getWeapon.replace('{{id}}', id);
     console.log("request", request);
 
     axios
-    .get(request)
-    .then((response)=> {
-      console.log("arme", response.data);
-      this.weapon = response.data;
-      console.log("l'arme en question : ", this.weapon)
-    })
+        .get(request)
+        .then((response) => {
+          console.log("arme", response.data);
+          this.weapon = response.data;
+          console.log("l'arme en question : ", this.weapon)
+        })
 
   }
 });

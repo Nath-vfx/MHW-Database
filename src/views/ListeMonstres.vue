@@ -37,7 +37,7 @@
 <script lang="ts">
 import {
   IonPage, IonToolbar, IonHeader, IonButtons, IonMenuButton, IonTitle, IonContent, IonCard, IonCardHeader,
-  IonCardTitle, IonCardSubtitle, IonCardContent, IonIcon, IonItem, IonList, IonThumbnail
+  IonCardTitle, IonCardSubtitle, IonCardContent, IonIcon, IonItem, IonList, IonThumbnail, IonSkeletonText
 } from '@ionic/vue';
 
 import {pawOutline} from 'ionicons/icons'
@@ -56,7 +56,7 @@ export default defineComponent({
   },
   components: {
     IonPage, IonToolbar, IonHeader, IonButtons, IonMenuButton, IonTitle, IonContent, IonCard, IonCardHeader,
-    IonCardTitle, IonCardSubtitle, IonCardContent, IonIcon, IonItem, IonList, IonThumbnail
+    IonCardTitle, IonCardSubtitle, IonCardContent, IonIcon, IonItem, IonList, IonThumbnail, IonSkeletonText
   },
   setup() {
     return {
@@ -65,9 +65,7 @@ export default defineComponent({
   },
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   mounted() {
-
     console.log('mounted Monsters', param.getMonsters);
-
     axios
     .get(param.getMonsters)
     .then((response) => {

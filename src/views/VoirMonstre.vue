@@ -3,7 +3,7 @@
     <ion-header translucent="true">
       <ion-toolbar>
         <ion-buttons slot="start">
-          <ion-menu-button color="primary"></ion-menu-button>
+          <ion-back-button defaultHref="listeMonstres" color="primary"></ion-back-button>
         </ion-buttons>
         <ion-title>Monstre</ion-title>
       </ion-toolbar>
@@ -68,6 +68,7 @@ export default defineComponent({
       this.monstre = response.data;
       console.log("le monstre en question : ", this.monstre)
     })
+
 
   }
 });

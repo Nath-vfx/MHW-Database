@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "mhw-app-bd",
+	"webDir": "public",
+	"bundledWebRuntime": false
+}
