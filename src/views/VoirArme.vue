@@ -9,7 +9,7 @@
       </ion-toolbar>
     </ion-header>
     <ion-content>
-      <ion-card >
+      <ion-card>
         <ion-card-header>
           <ion-item slot="start">
             <img :src="weapon.assets.icon">
@@ -22,14 +22,31 @@
           </ion-card-subtitle>
         </ion-card-header>
         <ion-card-content>
-          <ion-item color="secondary">
-            <ion-fab horizontal="center">
+          <ion-card class="imageContent">
+            <img :src="weapon.assets.image" :alt="weapon.name">
+          </ion-card>
+          <ion-grid>
+            <ion-row>
+              <ion-col>Attack :</ion-col>
+              <ion-col>{{weapon.attack.display}}</ion-col>
+            </ion-row>
 
-                <img :src="weapon.assets.image" :alt="weapon.name">
-            </ion-fab>
-          </ion-item>
+            <ion-row>
+            <ion-col>Elements</ion-col>
+            </ion-row>
+             <ion-row v-if="weapon.elements.length > 0">
+               <ion-col>Type</ion-col>
+              <ion-col>Damage</ion-col>
+                <ion-col>Hidden</ion-col>
+             </ion-row>
+             <ion-row v-if="weapon.elements.length > 0">
+               <ion-col>{{weapon.elements[0].type}}</ion-col>
+                <ion-col>{{weapon.elements[0].damage}}</ion-col>
+                <ion-col>{{weapon.elements[0].hidden}}</ion-col>
+              </ion-row>
 
 
+          </ion-grid>
         </ion-card-content>
       </ion-card>
     </ion-content>
@@ -53,7 +70,11 @@ import {
   IonCard,
   IonContent,
   IonImg,
-  IonItem
+  IonItem,
+  IonFab,
+  IonGrid,
+  IonRow,
+  IonCol
 } from '@ionic/vue';
 
 import {} from 'ionicons/icons';
@@ -71,6 +92,14 @@ export default defineComponent({
         name: null,
         type: null,
         rarity: null,
+        attack: {
+          display: null
+        },
+        elements: [{
+          type: null,
+          damage: null,
+          hidden: null
+        }],
         assets: {
           image: null,
           icon: null
@@ -93,10 +122,14 @@ export default defineComponent({
     IonCard,
     IonContent,
     IonImg,
-    IonItem
+    IonItem,
+    IonFab,
+    IonGrid,
+    IonRow,
+    IonCol
   },
   setup() {
-    return {}
+    return {length}
   },
   mounted() {
     let id = '' + this.$route.params.id;
@@ -116,3 +149,13 @@ export default defineComponent({
 });
 
 </script>
+
+<style scoped>
+
+.imageContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+</style>

@@ -40,7 +40,7 @@
 <script lang="ts">
 import {
   IonPage, IonToolbar, IonHeader, IonButtons, IonMenuButton, IonTitle, IonContent, IonCard, IonCardHeader,
-  IonCardTitle, IonCardSubtitle, IonCardContent, IonImg, IonItem, IonList, IonSkeletonText
+  IonCardTitle, IonCardSubtitle, IonCardContent, IonImg, IonItem, IonList, IonSkeletonText, IonButton
 } from '@ionic/vue';
 
 
@@ -58,7 +58,7 @@ export default defineComponent({
   },
   components: {
     IonPage, IonToolbar, IonHeader, IonButtons, IonMenuButton, IonTitle, IonContent, IonCard, IonCardHeader,
-    IonCardTitle, IonCardSubtitle, IonCardContent, IonImg, IonItem, IonList, IonSkeletonText
+    IonCardTitle, IonCardSubtitle, IonCardContent, IonImg, IonItem, IonList, IonSkeletonText, IonButton
   },
   setup() {
     return {

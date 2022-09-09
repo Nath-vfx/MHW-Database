@@ -5,7 +5,7 @@
         <ion-buttons slot="start">
           <ion-back-button color="primary"></ion-back-button>
         </ion-buttons>
-        <ion-title>Arme</ion-title>
+        <ion-title>Armure</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>
@@ -42,8 +42,10 @@
                 <ion-col v-for="piece in armor.pieces" :key="piece.id">
                   <ion-row v-for="skill in piece.skills" :key="skill.id">
                     <ion-card color="light">
-                      <ion-card-header><ion-button color="success" size="small">{{ skill.skillName }}</ion-button>
-                        <br> Lvl : {{ skill.level }}</ion-card-header>
+                      <ion-card-header>
+                        <ion-button color="success" size="small">{{ skill.skillName }}</ion-button>
+                        <br> Lvl : {{ skill.level }}
+                      </ion-card-header>
                       <ion-card-content>{{ skill.description }}</ion-card-content>
                     </ion-card>
                   </ion-row>
@@ -78,7 +80,8 @@ import {
   IonImg,
   IonItem,
   IonRow,
-  IonCol
+  IonCol,
+  IonButton
 } from '@ionic/vue';
 
 import {} from 'ionicons/icons';
@@ -116,7 +119,8 @@ export default defineComponent({
     IonImg,
     IonItem,
     IonRow,
-    IonCol
+    IonCol,
+    IonButton
   },
   setup() {
     return {}

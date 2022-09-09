@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c6143a86-5ff9-40d0-86a2-2d3fb7d8483c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/acidic-glavenus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/alatreon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/ancient-leshen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/anjanath.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/anteka.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/apceros.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/aptonoth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/azure-rathalos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/banbaro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/barioth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/barnos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/barroth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/bazelgeuse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/behemoth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/beotodus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/black-diablos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/blackveil-val-hazak.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/boaboa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/brachydios.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/brute-tigrex.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/coral-pukei-pukei.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/cortos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/deviljho.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/diablos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/dodogama.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/ebony-odogaron.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/fatalis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/frostfang-barioth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/fulgur-anjanath.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/furious-rajang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/gajalaka.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/gajau.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/gastodon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/girros.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/glavenus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/gold-rathian.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/great-girros.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/great-jagras.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/grimalkyne.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/hornetaur.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/jagras.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/jyuratodus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/kelbi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/kestodon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/kirin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/kulu-ya-ku.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/kulve-taroth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/kushala-daora.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/lavasioth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/legiana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/leshen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/lunastra.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/mernos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/mosswine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/namielle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/nargacuga.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/nergigante.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/nightshade-paolumu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/noios.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/odogaron.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/paolumu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/pink-rathian.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/popo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/pukei-pukei.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/radobaan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/raging-brachydios.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/rajang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/raphinos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/rathalos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/rathian.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/ruiner-nergigante.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/safi-jiva.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/savage-deviljho.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/scarred-yian-garuga.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/seething-bazelgeuse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/shamos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/shara-ishvalda.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/shrieking-legiana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/silver-rathalos.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/stygian-zinogre.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/teostra.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/tigrex.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/tobi-kadachi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/tzitzi-ya-ku.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/uragaan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/vaal-hazak.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/velkhana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/vespoid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/viper-tobi-kadachi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/wulg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/xeno-jiva.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/yian-garuga.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/zinogre.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/icon/Monsters/zorah-magdaros.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/ListeSpeArmes.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MHW-Database.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MHW-Database.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/ListeArmes.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ListeArmes.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/ListeArmures.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ListeArmures.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/ListeMonstres.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ListeMonstres.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/VoirArme.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/VoirArme.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/VoirArmure.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/VoirArmure.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/VoirMonstre.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/VoirMonstre.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/android">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/node_modules/@capacitor/android/capacitor">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/node_modules/@capacitor/app/android">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/node_modules/@capacitor/haptics/android">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/node_modules/@capacitor/keyboard/android">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/node_modules/@capacitor/status-bar/android">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="26BplC3JPoKqdYWd0NUv2NTKILl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/nathanvanbignoot/Documents/GitHub/MHW-Database&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/nathanvanbignoot/Documents/GitHub/MHW-Database/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="npm.build">
+    <configuration name="android.app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="android.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java />
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.serve" />
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6143a86-5ff9-40d0-86a2-2d3fb7d8483c" name="Changes" comment="" />
+      <created>1646906984623</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646906984623</updated>
+      <workItem from="1646906987798" duration="1151000" />
+      <workItem from="1646994365987" duration="1608000" />
+      <workItem from="1647288290690" duration="198000" />
+      <workItem from="1647290611552" duration="355000" />
+      <workItem from="1647350702704" duration="1618000" />
+      <workItem from="1647362285921" duration="1354000" />
+      <workItem from="1647372789205" duration="4000" />
+      <workItem from="1647382312224" duration="616000" />
+      <workItem from="1647421956741" duration="1363000" />
+      <workItem from="1651148562576" duration="566000" />
+      <workItem from="1653927232269" duration="915000" />
+      <workItem from="1656317686292" duration="49000" />
+      <workItem from="1659007049989" duration="54000" />
+      <workItem from="1659007131032" duration="1197000" />
+      <workItem from="1659546748501" duration="879000" />
+      <workItem from="1660145629270" duration="928000" />
+      <workItem from="1661509541540" duration="1067000" />
+      <workItem from="1661514815540" duration="810000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
